@@ -36,17 +36,17 @@ $ pip3 install -r requirements.txt
 2. high level design
 3. api design
 
-# Bonus:
+# Drawbacks
 
-create a deployment pipeline to deploy on a ubuntu VM. you can use any CI/CD tool for the same. <br>
-or <br>
-deploy on your own cloud provider and share the link with us.
+I have included a Dockerfile and am familiar with Docker but recently due to some laptop issues I am not being able to install Docker , my Ubuntu is not starting at all. Actually machine was dual booted with very less space on windows and more space on Ubuntu, now Ubuntu is not starting  due to some issues ,since I have made software changes hence getting no help from this from where I have bought this.Thats why the Docker and the database connection is not fully working. I  <br>
+![alt text](image.png)
+![alt text](image-1.png)
+
+
+
+Since the
 
 # What next?
 
 Once you have submitted the assignment, we will review your code and if it meets our requirements, we will get back to you within a week and schedule 1st round of interview. <br>
 in the 1st round of interview, we will discuss the code and build few additional features.
-
-### <i>Name</i>: Rajeev K L
-### <i>Email</i>: rajeev@almabase.com
-### <i>JD</i>: [Software Engineer](https://www.almabase.com/careers?ashby_jid=27df3851-fcea-47e2-af51-4c5aec17ff67)
