@@ -12,23 +12,13 @@ refer website/tasks.py for the tasks to be executed
 
 you can use any database, message queue, etc. to store the data. you can use any library to create the workers or any other part of the system. you can create any number of files, classes, functions, etc. to complete the assignment.
 
-# Setup:
+# Name and email
 
 ```
-install python3.5, pip3 and venv
-$ python3.5 -m venv almabase-venv
-$ source almabase-venv/bin/activate
-$ pip install --upgrade pip --trusted-host pypi.python.org
-$ pip3 install -r requirements.txt
+Somasree Majumder
+seckroll16@gmail.com
 ```
 
-# How to submit the assignment:
-
-1. Fork this repository
-2. Create a new branch with your name
-3. Commit your code to this branch
-4. Create a pull request to this repository
-5. Add your name and email to the README.md file
 
 # What will be evaluated?
 
@@ -46,7 +36,4 @@ I have included a Dockerfile and am familiar with Docker but recently due to som
 
 Since the
 
-# What next?
 
-Once you have submitted the assignment, we will review your code and if it meets our requirements, we will get back to you within a week and schedule 1st round of interview. <br>
-in the 1st round of interview, we will discuss the code and build few additional features.
