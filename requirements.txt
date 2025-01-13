@@ -16,3 +16,5 @@ coverage==7.6.4
 celery==5.4.0
 pytz==2024.2
 sqlparse==0.4.4
+unittest==3.2
+pytest==5.0

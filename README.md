@@ -40,4 +40,15 @@ I have included a Dockerfile and am familiar with Docker but recently due to som
 7. Config file to check the health of the database,whether its up and running or not
 
 
+# Furthur Imrovements will be done/doing
+
+1. Usage of Django Enums
+2. Use of Pydantic for kore modular class based structure
+3. Using a Custom Pagination
+4. Adding more intensive tests using pytest and unittest
+5. Adding a good frontend by usign Django templates( having  aproper seperate home page)
+6. More efficient handling of (N+1) query problem in Django
+7. Thinking of more corner cases
+
+
 
