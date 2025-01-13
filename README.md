@@ -23,18 +23,21 @@ I have included a Dockerfile and am familiar with Docker but recently due to som
 ![alt text](image.png)
 ![alt text](image-1.png)
 
-My Thought process-
+# My Thought process-
 
-The API Endpoints are available at /website
-All the api end points are /website/users/,/website/sites and  /website/jobs example-
+1. The API Endpoints are available at /website
+2. All the api end points are /website/users/,/website/sites and  /website/jobs example-
 ![alt text](image-2.png)
 
-1.For linting ruff has been used
-2.Necessary test unit tests have been added -
-3.Creating a model and assigning a jobs based upon the execution time
-4.3 different types of users based on the number of jobs they have
-5.A priority queue kind of data structure to assign jobs to the userd based upon the execution time with users with least resource oriented jobs will be given priority first
-7.Config file to check the health of the database,whether its up and running or not
+
+# Features
+
+1. For linting ruff has been used
+2. Necessary test unit tests have been added -
+3. Creating a model and assigning a jobs based upon the execution time
+4. 3 different types of users based on the number of jobs they have
+5. A priority queue kind of data structure to assign jobs to the userd based upon the execution time with users with least resource oriented jobs will be given priority first
+7. Config file to check the health of the database,whether its up and running or not
 
 
 
