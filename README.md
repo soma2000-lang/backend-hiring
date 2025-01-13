@@ -33,7 +33,7 @@ All the api end points are /website/users/,/website/sites and  /website/jobs exa
 2.Necessary test unit tests have been added -
 3.Creating a model and assigning a jobs based upon the execution time
 4.3 different types of users based on the number of jobs they have
-5.A priority queue kind of data structure to assign jobs to the userd based upon the execution time with users with 6.6.least resource oriented jobs will be given priority first
+5.A priority queue kind of data structure to assign jobs to the userd based upon the execution time with users with least resource oriented jobs will be given priority first
 7.Config file to check the health of the database,whether its up and running or not
 
 
