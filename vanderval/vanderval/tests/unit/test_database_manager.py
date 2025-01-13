@@ -2,7 +2,7 @@ from unittest import TestCase
 from unittest.mock import patch, MagicMock
 
 from django.conf import settings
-from todo_project.db.config import DatabaseManager
+from vanderval.db.config import DatabaseManager
 import psycopg
 from psycopg.errors import OperationalError
 

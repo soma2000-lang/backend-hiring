@@ -7,24 +7,15 @@ there is a list of customers in the Site table. Each customer has a unique id an
 3. create relevant apis to support the interactions.
 4. create workers which will pick up the job based on the customer type and job type and execute them. you can assume that each worker can execute only one job at a time.
 
-refer website/models.py for Site Table <br>
-refer website/tasks.py for the tasks to be executed
 
 you can use any database, message queue, etc. to store the data. you can use any library to create the workers or any other part of the system. you can create any number of files, classes, functions, etc. to complete the assignment.
 
 # Name and email
 
-```
 Somasree Majumder
 seckroll16@gmail.com
-```
 
 
-# What will be evaluated?
-
-1. Code quality
-2. high level design
-3. api design
 
 # Drawbacks
 
@@ -32,8 +23,18 @@ I have included a Dockerfile and am familiar with Docker but recently due to som
 ![alt text](image.png)
 ![alt text](image-1.png)
 
+My Thought process-
 
+The API Endpoints are available at /website
+All the api end points are /website/users/,/website/sites and  /website/jobs example-
+![alt text](image-2.png)
 
-Since the
+1.For linting ruff has been used
+2.Necessary test unit tests have been added -
+3.Creating a model and assigning a jobs based upon the execution time
+4.3 different types of users based on the number of jobs they have
+5.A priority queue kind of data structure to assign jobs to the userd based upon the execution time with users with 6.6.least resource oriented jobs will be given priority first
+7.Config file to check the health of the database,whether its up and running or not
+
 
 
