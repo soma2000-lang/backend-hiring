@@ -22,7 +22,7 @@ class DatabaseManagerTests(TestCase):
         database_manager2 = DatabaseManager()
         self.assertIs(database_manager1, database_manager2)
 
-    @patch("todo_project.db.config.psycopg.connect")
+    @patch("vanderval.db.config.psycopg.connect")
     def test_initializes_db_connection_on_first_call(self, mock_connect):
         mock_connection = MagicMock(spec=psycopg.Connection)
         mock_connect.return_value = mock_connection
