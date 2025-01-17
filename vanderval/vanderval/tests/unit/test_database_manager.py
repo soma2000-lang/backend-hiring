@@ -9,7 +9,7 @@ from psycopg.errors import OperationalError
 
 class DatabaseManagerTests(TestCase):
     def setUp(self):
-        DatabaseManager._DatabaseManager__instance = None
+        DatabaseManager.__instance = None
         self.database_manager = DatabaseManager()
 
     def tearDown(self):
