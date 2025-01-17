@@ -38,7 +38,7 @@ class DatabaseManagerTests(TestCase):
         )
         self.assertIs(db_connection, mock_connection)
 
-    @patch("todo_project.db.config.psycopg.connect")
+    @patch("vanderval.db.config.psycopg.connect")
     def test_reuses_existing_connection_on_subsequent_calls(self, mock_connect):
         mock_connection = MagicMock(spec=psycopg.Connection)
         mock_connect.return_value = mock_connection
@@ -49,7 +49,7 @@ class DatabaseManagerTests(TestCase):
         mock_connect.assert_called_once()
         self.assertIs(connection1, connection2)
 
-    @patch("todo_project.db.config.DatabaseManager._get_database_connection")
+    @patch("vanderval.db.config.DatabaseManager._get_database_connection")
     def test_initializes_cursor_on_first_call(self, mock_get_connection):
         mock_connection = MagicMock(spec=psycopg.Connection)
         mock_cursor = MagicMock(spec=psycopg.Cursor)
@@ -62,7 +62,7 @@ class DatabaseManagerTests(TestCase):
         mock_connection.cursor.assert_called_once()
         self.assertIs(cursor, mock_cursor)
 
-    @patch("todo_project.db.config.DatabaseManager._get_database_connection")
+    @patch("vaderval.db.config.DatabaseManager._get_database_connection")
     def test_reuses_existing_cursor_on_subsequent_calls(self, mock_get_connection):
         mock_connection = MagicMock(spec=psycopg.Connection)
         mock_cursor = MagicMock(spec=psycopg.Cursor)
@@ -87,7 +87,7 @@ class DatabaseManagerTests(TestCase):
         mock_get_cursor.assert_called_once()
         mock_cursor.execute.assert_called_once_with(query, params)
 
-    @patch("todo_project.db.config.DatabaseManager.get_cursor")
+    @patch("vanderval.db.config.DatabaseManager.get_cursor")
     def test_fetch_all_returns_all_results(self, mock_get_cursor):
         mock_cursor = MagicMock(spec=psycopg.Cursor)
         expected_results = [(1, 'test'), (2, 'test2')]
@@ -99,7 +99,7 @@ class DatabaseManagerTests(TestCase):
         self.assertEqual(results, expected_results)
         mock_cursor.fetchall.assert_called_once()
 
-    @patch("todo_project.db.config.DatabaseManager._get_database_connection")
+    @patch("vanderval.db.config.DatabaseManager._get_database_connection")
     def test_check_db_health_returns_true_on_successful_connection(self, mock_get_connection):
         mock_connection = MagicMock(spec=psycopg.Connection)
         mock_cursor = MagicMock(spec=psycopg.Cursor)
@@ -111,7 +111,7 @@ class DatabaseManagerTests(TestCase):
         self.assertTrue(result)
         mock_cursor.execute.assert_called_once_with("SELECT 1")
 
-    @patch("todo_project.db.config.DatabaseManager._get_database_connection")
+    @patch("vanderval.db.config.DatabaseManager._get_database_connection")
     def test_check_db_health_returns_false_on_connection_failure(self, mock_get_connection):
         mock_get_connection.side_effect = OperationalError("Mocked connection failure")
 
